@@ -43,9 +43,6 @@ class BreathFragment: Fragment()
         hold.text = viewModel.parameters.zadergka1.toString()
         hold2.text = viewModel.parameters.zadergka2.toString()
 
-
-
-
     }
     fun checker(newValues: SessionParameters)
     {
