@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="-205dp">
+        tools:layout_editor_absoluteX="-39dp"
+        tools:layout_editor_absoluteY="-16dp">
 
         <ImageView
             android:id="@+id/imageView9"
@@ -89,7 +89,7 @@
             app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/start"
             android:layout_width="276dp"
             android:layout_height="287dp"
             app:srcCompat="@drawable/main_circle"

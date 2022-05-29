@@ -43,6 +43,8 @@ class BreathFragment: Fragment()
         hold.text = viewModel.parameters.zadergka1.toString()
         hold2.text = viewModel.parameters.zadergka2.toString()
 
+        view.findViewById<Button>(R.id.start).setOnClickListener { viewModel.startSession() }
+
     }
     fun checker(newValues: SessionParameters)
     {
@@ -56,4 +58,10 @@ class BreathFragment: Fragment()
         hold?.text = newValues.zadergka1.toString()
         hold2?.text = newValues.zadergka2.toString()
     }
+
+    fun startOrNotToStart(value: Boolean)
+    {
+        view?.findViewById<Button>(R.id.start)?.isEnabled = value
+    }
+
 }

@@ -37,6 +37,8 @@ class BreathNewModel1
 
             }
         }
+        timer?.start()
+        listener?.startOrNotToStart(false)
     }
 
     fun update()
