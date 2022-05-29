@@ -18,8 +18,9 @@
             android:id="@+id/imageView9"
             android:layout_width="159dp"
             android:layout_height="134dp"
+            android:layout_marginEnd="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/ellipse_3__1_"
-            tools:layout_editor_absoluteX="206dp"
             tools:layout_editor_absoluteY="485dp" />
 
         <TextView
@@ -36,8 +37,9 @@
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/ellipse_2__1_"
-            tools:layout_editor_absoluteX="31dp"
             tools:layout_editor_absoluteY="488dp" />
 
         <TextView
@@ -56,9 +58,12 @@
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ellipse_4"
-            tools:layout_editor_absoluteX="31dp"
-            tools:layout_editor_absoluteY="672dp" />
+            android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ellipse_4" />
 
         <TextView
             android:id="@+id/hold1"
@@ -74,9 +79,11 @@
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ellipse_5"
-            tools:layout_editor_absoluteX="206dp"
-            tools:layout_editor_absoluteY="672dp" />
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ellipse_5" />
 
         <TextView
             android:id="@+id/hold2"
@@ -92,9 +99,21 @@
             android:id="@+id/start"
             android:layout_width="276dp"
             android:layout_height="287dp"
-            app:srcCompat="@drawable/main_circle"
-            tools:layout_editor_absoluteX="62dp"
-            tools:layout_editor_absoluteY="116dp" />
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/main_circle" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="380dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
